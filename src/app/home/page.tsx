@@ -1,9 +1,19 @@
-import React from 'react'
+'use client'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import { useRouter } from 'next/navigation'
 
-const home = () => {
+export default function Home() {
+  // const router = useRouter()
   return (
-      <div>home</div>
+    <>
+      <Header></Header>
+      <div>
+        <div className='w-full h-full'>
+          哈哈哈哈
+        </div>
+      </div>
+      <Footer></Footer>
+    </>
   )
 }
-
-export default home
